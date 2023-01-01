@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+	--soft-blue: hsl(215, 51%, 70%);
+	--cyan: hsl(178, 100%, 50%);
+	--blue-main-BG: hsl(217, 54%, 11%);
+	--blue-card-BG: hsl(216, 50%, 16%);
+	--blue-line: hsl(215, 32%, 27%);
+	--white: hsl(0, 0%, 100%);
+	font-family: 'Outfit', sans-serif;
+}
+
+*  {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: var(--blue-main-BG);
+	color: var(--soft-blue);
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	max-width: 350px;
+	padding: 25px;
+	background: var(--blue-card-BG);
+	border-radius: 15px;
+}
+
+.card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.image {
+	width: 100%;
+	border-radius: 7px;
+}
+
+
+.icon_view {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 300px;
+	border-radius: 7px;
+	position: absolute;
+	opacity: 0;
+}
+
+.icon_view:hover {
+	background: rgba(103,242,209,0.7);
+	opacity: 1;
+	cursor: pointer;
+}
+
+.container h1 {
+	font-size: 1.25rem;
+	font-weight: 600;
+	margin-top: 32px;
+	color: var(--white);
+}
+
+.container h1:hover {
+	color: var(--cyan);
+	cursor: pointer;
+}
+
+.container p {
+	font-size: 1.125rem;
+	font-weight: 300;
+	line-height: 1.5;
+	margin-top: 24px;
+}
+
+.price {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 32px;
+}
+
+.ETH {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--cyan);
+	font-weight: 600;
+}
+
+.ETH img {
+	margin-right: 10px;
+}
+
+.time {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 300;
+}
+
+.time img {
+	margin-right: 6px;
+}
+
+hr {
+	margin-top: 12px;
+	border-color: var(--soft-blue);
+	margin-top: 20px;
+}
+
+.creator {
+	display: flex;
+	align-items: center;
+	margin-top: 18px;
+}
+
+.creator img {
+	width: 32px;
+	height: 32px;
+	margin-right: 12px;
+	border: 1px solid var(--white);
+	border-radius: 50%;
+}
+
+.creator h2 {
+	font-weight: 300;
+	font-size: 1.1rem;
+}
+
+.creator a {
+	color: var(--white);
+}
+
+.creator a:hover {
+	color: var(--cyan);
+}
